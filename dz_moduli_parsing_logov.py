@@ -45,7 +45,7 @@ def make_report(log_file_name , report_template_file_name = 'report_template.xls
     all_product_woman = collections.Counter(woman_buy).most_common()               
     most_popular_product_man = collections.Counter(man_buy).most_common(1)
     most_unpopular_product_man = all_product_man[:-(len(all_product_man) + 1):-1][0]
-    most_popular_product_woman = collections.Counter(man_buy).most_common(1)
+    most_popular_product_woman = collections.Counter(woman_buy).most_common(1)
     most_unpopular_product_woman = all_product_woman[:-(len(all_product_woman) + 1):-1][0]
 
     for slovar in log_file_dict:
