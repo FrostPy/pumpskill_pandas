@@ -1,12 +1,8 @@
 import collections
-from typing import Collection
-from zlib import Z_HUFFMAN_ONLY
-from numpy import number
 import pandas
-from  collections import Counter
 from openpyxl import workbook
 from openpyxl import load_workbook
-from pprint import pprint
+
 
 #report_output_file_name = 'report.xlsx'
 #report_template_file_name = 'report_template.xlsx'
@@ -138,6 +134,3 @@ def make_report(log_file_name , report_template_file_name = 'report_template.xls
 
     # Сохраняем файл-отчет
     wb.save(report_output_file_name)
-
-
-make_report('logs.xlsx','report_template.xlsx','report.xlsx')
